@@ -243,6 +243,8 @@ authors:
       family-names: Padkonde
     - given-names: Hamza
       family-names: Abdelhedi
+    - given-names: Don
+      family-names: Yin
     - given-names: Alexandre
       family-names: Gramfort
       affiliation: 'Université Paris-Saclay, Inria, CEA, Palaiseau, France'

@@ -1546,7 +1546,11 @@ def read_raw_bids(
             )
         raw_path = pdf_list[0]
         config_path = bids_raw_folder / "config"
+        hsp = bids_raw_folder / "hs_file"
+        if not hsp.is_file():
+            hsp = None
     else:
+        hsp = None
         raw_path = bids_path.fpath
         # Resolve for FIFF files
         if (
@@ -1595,7 +1599,7 @@ def read_raw_bids(
     raw = _read_raw(
         raw_path,
         electrode=None,
-        hsp=None,
+        hsp=hsp,
         hpi=None,
         config_path=config_path,
         verbose=verbose,

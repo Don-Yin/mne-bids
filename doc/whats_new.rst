@@ -19,6 +19,7 @@ Version 0.21 (unreleased)
 
 The following authors contributed for the first time. Thank you so much! 🤩
 
+* `Don Yin`_
 * `Hamza Abdelhedi`_
 * `Shubham Padkonde`_
 
@@ -62,6 +63,7 @@ Detailed list of changes
 🪲 Bug fixes
 ^^^^^^^^^^^^
 
+- :func:`mne_bids.read_raw_bids` now reads the fiducials and head shape from ``hs_file`` when it is present in a BTi recording, by `Don Yin`_.
 - :func:`mne_bids.read_raw_bids` and :func:`mne_bids.read_epochs_bids` now load recording metadata from inherited JSON sidecars. :func:`mne_bids.read_raw_bids` also preserves HED annotations defined in inherited ``events.json`` files, by `Bruno Aristimunha`_ (:gh:`1716`)
 - :func:`mne_bids.read_raw_bids` now uses the age ``Units`` from ``participants.json`` (for example months) when setting the birthday, instead of always assuming years, by `Bruno Aristimunha`_ (:gh:`1721`)
 - Reject unexpected EEGLAB companion file extensions with a ``ValueError`` instead of an assertion, so validation is retained when Python runs with optimization enabled, by `Bruno Aristimunha`_ (:gh:`1710`)

@@ -20,6 +20,7 @@
 .. _Denis Engemann: https://github.com/dengemann
 .. _Diego Lozano-Soldevilla: https://orcid.org/0000-0003-1794-8204
 .. _Dominik Welke: https://github.com/dominikwelke
+.. _Don Yin: https://github.com/Don-Yin
 .. _Eduard Ort: https://github.com/eort
 .. _Eric Larson: https://larsoner.com/
 .. _Erica Peterson: https://github.com/nordme

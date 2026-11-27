@@ -1369,7 +1369,8 @@ def test_bti(_bids_validate, tmp_path, dataset):
     else:
         # The other datasets can be read, as their pdf file names were
         # not changed and still fit the "standard" naming patterns
-        raw = read_raw_bids(bids_path=bids_output_path)
+        raw_read = read_raw_bids(bids_path=bids_output_path)
+        assert raw_read.info["dig"] == raw.info["dig"]
 
 
 @pytest.mark.filterwarnings(
